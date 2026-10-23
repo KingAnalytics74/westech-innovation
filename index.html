@@ -225,7 +225,7 @@
   #portfolio { padding: 100px 24px; }
   .portfolio-header { margin-bottom: 60px; }
   .portfolio-grid {
-    display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 24px;
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px;
   }
   .portfolio-card {
     background: var(--card); border: 1px solid var(--border); border-radius: 20px;
@@ -244,6 +244,15 @@
   }
   .pv-house {
     background: linear-gradient(135deg, #0a0d1a 0%, #0D1030 100%);
+  }
+  .pv-shift {
+    background: linear-gradient(135deg, #0d0a1a 0%, #1a0d2e 100%);
+  }
+  .pv-saf {
+    background: linear-gradient(135deg, #1a0a0a 0%, #200d0d 100%);
+  }
+  .pv-imagine {
+    background: linear-gradient(135deg, #0a0d1a 0%, #1a0a20 100%);
   }
   .portfolio-mockup {
     width: 200px; height: 160px; background: rgba(255,255,255,.05);
@@ -624,7 +633,7 @@
         <div class="stat-label">Service Lines</div>
       </div>
       <div class="stat-item">
-        <div class="stat-num">3<span>+</span></div>
+        <div class="stat-num">6<span>+</span></div>
         <div class="stat-label">Live Products</div>
       </div>
       <div class="stat-item">
@@ -822,6 +831,124 @@
           </div>
         </div>
       </div>
+
+      <!-- ShiftBook -->
+      <div class="portfolio-card fade-up delay-3">
+        <div class="portfolio-visual pv-shift">
+          <div class="portfolio-mockup">
+            <div class="pm-bar" style="background:#8B5CF6;width:65%"></div>
+            <div class="pm-bar short"></div>
+            <div class="pm-row">
+              <div class="pm-box" style="background:rgba(139,92,246,.3)"></div>
+              <div class="pm-box" style="background:rgba(139,92,246,.15)"></div>
+              <div class="pm-box" style="background:rgba(139,92,246,.3)"></div>
+            </div>
+            <div class="pm-bar med"></div>
+            <div class="pm-row">
+              <div class="pm-box" style="background:rgba(139,92,246,.2)"></div>
+              <div class="pm-box"></div>
+            </div>
+            <div class="pm-dot" style="background:#8B5CF6"></div>
+          </div>
+        </div>
+        <div class="portfolio-body">
+          <div class="portfolio-meta">
+            <span class="portfolio-num">04</span>
+            <span class="tag" style="background:rgba(139,92,246,.1);color:#A78BFA;border-color:rgba(139,92,246,.25);">HealthTech</span>
+          </div>
+          <h3 class="portfolio-title">ShiftBook</h3>
+          <p class="portfolio-desc">AI-powered rota and staffing platform for care providers. Tracks open shifts, live staffing levels, and fatigue risk — with gender matching, coordinator-approved swaps, and a full compliance audit trail built in.</p>
+          <div class="portfolio-footer">
+            <div class="portfolio-tech">
+              <span class="tag" style="font-size:.62rem;">Python</span>
+              <span class="tag" style="font-size:.62rem;">AI Scheduling</span>
+              <span class="tag" style="font-size:.62rem;background:rgba(139,92,246,.1);color:#A78BFA;border-color:rgba(139,92,246,.25);">Care Compliance</span>
+            </div>
+            <a href="https://github.com/KingAnalytics74/ShiftBook" target="_blank" rel="noopener noreferrer" class="portfolio-link">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H6M11 3V8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- SAF — Fraud Detection -->
+      <div class="portfolio-card fade-up delay-4">
+        <div class="portfolio-visual pv-saf">
+          <div class="portfolio-mockup">
+            <div class="pm-bar" style="background:#EF4444;width:55%"></div>
+            <div class="pm-bar short"></div>
+            <div class="pm-row">
+              <div class="pm-box" style="background:rgba(239,68,68,.25)"></div>
+              <div class="pm-box" style="background:rgba(239,68,68,.1)"></div>
+            </div>
+            <div class="pm-bar med"></div>
+            <div class="pm-row">
+              <div class="pm-box"></div>
+              <div class="pm-box" style="background:rgba(239,68,68,.2)"></div>
+              <div class="pm-box"></div>
+            </div>
+            <div class="pm-dot" style="background:#EF4444"></div>
+          </div>
+        </div>
+        <div class="portfolio-body">
+          <div class="portfolio-meta">
+            <span class="portfolio-num">05</span>
+            <span class="tag" style="background:rgba(239,68,68,.1);color:#FCA5A5;border-color:rgba(239,68,68,.25);">FinTech · ML</span>
+          </div>
+          <h3 class="portfolio-title">SAF — Smart Analytics Fraud</h3>
+          <p class="portfolio-desc">End-to-end bank transaction fraud detection system. Covers data preprocessing, feature engineering, anomaly detection, and model building with Logistic Regression and Random Forest — complete with ROC curves and confusion matrix evaluation.</p>
+          <div class="portfolio-footer">
+            <div class="portfolio-tech">
+              <span class="tag" style="font-size:.62rem;">Python</span>
+              <span class="tag" style="font-size:.62rem;">Random Forest</span>
+              <span class="tag" style="font-size:.62rem;background:rgba(239,68,68,.1);color:#FCA5A5;border-color:rgba(239,68,68,.25);">Fraud Detection</span>
+            </div>
+            <a href="https://github.com/KingAnalytics74/SAF" target="_blank" rel="noopener noreferrer" class="portfolio-link">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H6M11 3V8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Imagine AI -->
+      <div class="portfolio-card fade-up delay-5">
+        <div class="portfolio-visual pv-imagine">
+          <div class="portfolio-mockup">
+            <div class="pm-bar" style="background:linear-gradient(90deg,#8B5CF6,#EC4899);width:75%"></div>
+            <div class="pm-bar short"></div>
+            <div class="pm-row">
+              <div class="pm-box" style="background:rgba(236,72,153,.2)"></div>
+              <div class="pm-box" style="background:rgba(139,92,246,.2)"></div>
+            </div>
+            <div class="pm-bar med"></div>
+            <div class="pm-row">
+              <div class="pm-box" style="background:rgba(139,92,246,.15)"></div>
+              <div class="pm-box" style="background:rgba(236,72,153,.15)"></div>
+              <div class="pm-box" style="background:rgba(139,92,246,.15)"></div>
+            </div>
+            <div class="pm-dot" style="background:#EC4899"></div>
+          </div>
+        </div>
+        <div class="portfolio-body">
+          <div class="portfolio-meta">
+            <span class="portfolio-num">06</span>
+            <span class="tag orange">AI-Powered</span>
+          </div>
+          <h3 class="portfolio-title">Imagine AI</h3>
+          <p class="portfolio-desc">An AI-powered life design platform featuring vision boards that think, remember, and grow with you. Combines goal-setting psychology with generative AI to help users visualise and engineer the life they want.</p>
+          <div class="portfolio-footer">
+            <div class="portfolio-tech">
+              <span class="tag" style="font-size:.62rem;">Python</span>
+              <span class="tag orange" style="font-size:.62rem;">Claude API</span>
+              <span class="tag" style="font-size:.62rem;">Vision Boards</span>
+            </div>
+            <a href="https://github.com/KingAnalytics74/Imagine-AI" target="_blank" rel="noopener noreferrer" class="portfolio-link">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 11L11 3M11 3H6M11 3V8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
