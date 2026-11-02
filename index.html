@@ -620,6 +620,45 @@
   }
   .job-apply:hover { background: var(--blue); color: #fff; }
   .no-roles { text-align: center; padding: 48px 24px; color: var(--muted); font-size: .95rem; border: 1px dashed var(--border); border-radius: 12px; }
+
+  /* ─── Founder Story ─────────────────────────────────────────────────────── */
+  #story { padding: 100px 24px; }
+  .story-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+  }
+  .story-label { font-size: .72rem; font-weight: 500; letter-spacing: .12em; text-transform: uppercase; color: var(--blue); margin-bottom: 16px; display: block; }
+  .story-heading { font-size: clamp(1.8rem, 3.5vw, 2.6rem); color: var(--white); line-height: 1.2; margin-bottom: 24px; }
+  .story-heading em { font-style: normal; color: var(--blue); }
+  .story-body { display: flex; flex-direction: column; gap: 18px; }
+  .story-body p { font-size: .97rem; color: var(--muted); line-height: 1.85; font-weight: 300; }
+  .story-body p strong { color: var(--white); font-weight: 500; }
+  .story-signature { margin-top: 8px; }
+  .story-signature .sig-name { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 1rem; color: var(--white); }
+  .story-signature .sig-role { font-size: .8rem; color: var(--muted); margin-top: 2px; }
+  .story-visual {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  .story-stat {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 28px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .story-stat:first-child { grid-column: span 2; border-color: rgba(14,124,74,.25); background: rgba(14,124,74,.06); }
+  .story-stat-icon { font-size: 1.5rem; }
+  .story-stat-val { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 1.6rem; color: var(--white); }
+  .story-stat-label { font-size: .8rem; color: var(--muted); font-weight: 300; line-height: 1.4; }
+  @media (max-width: 768px) {
+    .story-inner { grid-template-columns: 1fr; gap: 48px; }
+  }
 </style>
 </head>
 <body>
@@ -1057,6 +1096,50 @@
             <div class="cap-header"><span class="cap-label">Mobile Development</span><span class="cap-pct">85%</span></div>
             <div class="cap-bar"><div class="cap-fill blue" data-width="85"></div></div>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FOUNDER STORY ──────────────────────────────────────────────────────── -->
+<section id="story">
+  <div class="container">
+    <div class="story-inner">
+      <div class="fade-up">
+        <span class="story-label">Our Story</span>
+        <h2 class="story-heading">Built from <em>nothing</em>.<br/>Driven by everything.</h2>
+        <div class="story-body">
+          <p>WesTech didn't start with investment rounds or an office. It started with <strong>a decision made when all hope was lost</strong> — when there was nothing to do and nowhere obvious to go.</p>
+          <p>Our founder put money he didn't have into learning data analytics. Not a little money. Money that had to be found, scraped together, and committed to a single belief: that <strong>knowing data could change everything</strong>. Every day was the same thought — data analytics, data analytics, data analytics.</p>
+          <p>That obsession opened a door. A chance to learn data engineering. Then systems. Then LocalBuka. Then how to use AI to build things that felt like magic. <strong>Each step built on the last</strong> — curiosity compounding into capability.</p>
+          <p>WesTech exists because one person refused to let circumstance be the final word. That same energy — <strong>creativity, hard work, and resilience</strong> — is in every system we build for you.</p>
+        </div>
+        <div class="story-signature" style="margin-top:28px;">
+          <div class="sig-name">Babatope Bakare</div>
+          <div class="sig-role">Founder & CEO, WesTech Innovations Ltd</div>
+        </div>
+      </div>
+      <div class="story-visual fade-up delay-2">
+        <div class="story-stat">
+          <div class="story-stat-icon">🔥</div>
+          <div class="story-stat-val">Zero to Systems</div>
+          <div class="story-stat-label">Started with nothing but a decision — data analytics, engineering, AI, and shipping real products that reach real users.</div>
+        </div>
+        <div class="story-stat">
+          <div class="story-stat-icon">📊</div>
+          <div class="story-stat-val">Data First</div>
+          <div class="story-stat-label">Every product we build is grounded in data thinking — from how features are designed to how results are measured.</div>
+        </div>
+        <div class="story-stat">
+          <div class="story-stat-icon">🤖</div>
+          <div class="story-stat-val">AI-Native</div>
+          <div class="story-stat-label">We learnt AI not as a feature but as a foundation — building intelligence into systems from the ground up.</div>
+        </div>
+        <div class="story-stat">
+          <div class="story-stat-icon">🏗️</div>
+          <div class="story-stat-val">Built to Last</div>
+          <div class="story-stat-label">Systems engineered with the same resilience it took to build this company — designed to hold under pressure.</div>
         </div>
       </div>
     </div>
